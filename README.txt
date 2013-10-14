@@ -7,7 +7,7 @@ This mod will bypass the Email app from becoming device admin for your phone and
 Instructions for users
 - Remove your existing email account from phone and reboot
 - Install Xposed installer (from link above)
-- Install this mod (Download apk from here: )
+- Install this mod (Download apk from here: https://github.com/shantanugoel/ExchangeBypassXposed/blob/master/ExchangeBypassForXposed/ExchangeBypassForXposed.apk )
 - Enable the mod in xposed (Preferences for other devices/versions coming Soon)
 - Reboot
 - Add your email account again. This time, it will ask you that the email
@@ -15,6 +15,8 @@ Instructions for users
 - Done. :)
 
 Instructions for developers
+- Read the xda link at the top of this readme and go through basics of xposed development
+- Install xposed as an android sdk addon on your system
 - Clone this git repo
 - Import in Android Studio
 - Make changes
