@@ -1,0 +1,23 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.5.+'
+    }
+}
+apply plugin: 'android'
+
+android {
+    compileSdkVersion "rovo89:Xposed Bridge API 2.1:18"
+    buildToolsVersion "18.1.0"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 18
+    }
+}
+
+dependencies {
+	compile 'com.android.support:appcompat-v7:18.0.0'
+}
