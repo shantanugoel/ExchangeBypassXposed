@@ -74,5 +74,15 @@ public class XposedModule implements IXposedHookLoadPackage {
         findAndHookMethod("com.android.email.SecurityPolicy",
                 lpparam.classLoader, "getInactiveReasons", "com.android.emailcommon.provider.Policy",
                 returnZero);
+        if( android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.KITKAT ) {
+            findAndHookMethod("com.android.email.SecurityPolicy",
+                    lpparam.classLoader, "isActiveAdmin", returnTrue);
+            findAndHookMethod("com.android.email.SecurityPolicy",
+                    lpparam.classLoader, "isActive", "com.android.emailcommon.provider.Policy",
+                    returnTrue);
+            findAndHookMethod("com.android.email.SecurityPolicy",
+                    lpparam.classLoader, "remoteWipe",
+                    de.robv.android.xposed.XC_MethodReplacement.DO_NOTHING);
+        }
     }
 }
