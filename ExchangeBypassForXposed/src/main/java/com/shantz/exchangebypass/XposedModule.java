@@ -54,10 +54,10 @@ public class XposedModule implements IXposedHookLoadPackage {
 
     public void handleLoadPackage(final LoadPackageParam lpparam)
             throws Throwable {
-        if (lpparam.packageName.equals("com.google.android.email")) {
+        if (lpparam.packageName.equals("com.google.android.email") || lpparam.packageName.equals("com.android.email")) {
             XposedBridge.log("Loaded app: " + lpparam.packageName);
             hookEmail(lpparam);
-        } else if (lpparam.packageName.equals("com.google.android.exchange")) {
+        } else if (lpparam.packageName.equals("com.google.android.exchange") || lpparam.packageName.equals("com.android.exchange")) {
             XposedBridge.log("Loaded app: " + lpparam.packageName);
             hookExchange(lpparam);
         }
