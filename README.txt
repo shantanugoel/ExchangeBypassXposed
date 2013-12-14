@@ -25,9 +25,16 @@ Instructions for developers
 Credits:
 - rovo89 from xda (for creating xposed)
 - mpcjanssen from xda (for original mod)
+- adumont from github (for AOSP support changes)
 
 Please visit http://tech.shantanugoel.com/ for any queries and feedback
 
 Changelog:
+1.2 14-Dec-13
+AOSP ROMs support. Removed some unnecessary logging.
+
+1.1 28-Nov-13
+KitKat support. Tested on Nexus 4, Nexus 5, Nexus 7 2012, Nexus 7 2013
+
 1.0 14-Oct-13
 Initial version. Working for Nexus 4 Android 4.3

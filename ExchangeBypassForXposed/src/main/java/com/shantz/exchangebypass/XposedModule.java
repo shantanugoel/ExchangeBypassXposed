@@ -19,7 +19,7 @@ public class XposedModule implements IXposedHookLoadPackage {
         @Override
         protected Object replaceHookedMethod(MethodHookParam param)
                 throws Throwable {
-            XposedBridge.log("returntrue hook run");
+            //XposedBridge.log("returntrue hook run");
             return true;
         }
     };
@@ -28,7 +28,7 @@ public class XposedModule implements IXposedHookLoadPackage {
         @Override
         protected Object replaceHookedMethod(MethodHookParam param)
                 throws Throwable {
-            XposedBridge.log("returnzero hook run");
+            //XposedBridge.log("returnzero hook run");
             return 0;
         }
     };
@@ -36,7 +36,7 @@ public class XposedModule implements IXposedHookLoadPackage {
     XC_MethodHook updatePolicy = new XC_MethodHook() {
         @Override
         protected void beforeHookedMethod(MethodHookParam param) throws Throwable {
-            XposedBridge.log("Normalize hook run");
+            //XposedBridge.log("Normalize hook run");
             setIntField(param.thisObject, "mPasswordMode", 0);
             setBooleanField(param.thisObject, "mRequireRemoteWipe", false);
             setBooleanField(param.thisObject, "mRequireEncryption", false);
