@@ -30,6 +30,9 @@ Credits:
 Please visit http://tech.shantanugoel.com/ for any queries and feedback
 
 Changelog:
+1.3 15-Dec-13
+Fixed random email app crashes
+
 1.2 14-Dec-13
 AOSP ROMs support. Removed some unnecessary logging.
 
