@@ -30,6 +30,9 @@ Credits:
 Please visit http://tech.shantanugoel.com/ for any queries and feedback
 
 Changelog:
+1.4 16-Dec-13
+Fixing the fixes :)
+
 1.3 15-Dec-13
 Fixed random email app crashes
 
