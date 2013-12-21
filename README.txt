@@ -30,6 +30,9 @@ Credits:
 Please visit http://tech.shantanugoel.com/ for any queries and feedback
 
 Changelog:
+1.5 22-Dec-13
+Allow updation of policy keys properly on Exchange server's request otherwise sync may hang
+
 1.4 16-Dec-13
 Fixing the fixes :)
 
