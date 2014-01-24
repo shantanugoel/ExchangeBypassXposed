@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExchangeBypass.iml" filepath="$PROJECT_DIR$/ExchangeBypass.iml" />
       <module fileurl="file://$PROJECT_DIR$/ExchangeBypassForXposed/ExchangeBypassForXposed.iml" filepath="$PROJECT_DIR$/ExchangeBypassForXposed/ExchangeBypassForXposed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ExchangeBypassXposed.iml" filepath="$PROJECT_DIR$/ExchangeBypassXposed.iml" />
     </modules>
   </component>
 </project>
