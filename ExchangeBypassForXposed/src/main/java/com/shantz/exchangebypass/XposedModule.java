@@ -86,6 +86,11 @@ public class XposedModule implements IXposedHookLoadPackage {
             findAndHookMethod("com.android.email.SecurityPolicy",
                     lpparam.classLoader, "setActivePolicies",
                     de.robv.android.xposed.XC_MethodReplacement.DO_NOTHING);
+            findAndHookMethod("com.android.email.NotificationController",
+                    lpparam.classLoader, "showSecurityChangedNotification",
+                    "com.android.emailcommon.provider.Account",
+                    de.robv.android.xposed.XC_MethodReplacement.DO_NOTHING);
+
         }
     }
 }

@@ -26,10 +26,14 @@ Credits:
 - rovo89 from xda (for creating xposed)
 - mpcjanssen from xda (for original mod)
 - adumont from github (for AOSP support changes)
+- grantland from github (Cleanup)
 
 Please visit http://tech.shantanugoel.com/ for any queries and feedback
 
 Changelog:
+1.6 26-Jan-14
+Cleanup. Remove Security Policy changed notification.
+
 1.5 22-Dec-13
 Allow updation of policy keys properly on Exchange server's request otherwise sync may hang
 
